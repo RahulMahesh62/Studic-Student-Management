@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 10%;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+#logo img {
+    height: auto;
+}
+
+#clglogo {
+    height: 60px;
+    width: 60px;
+}
+
+nav button {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin: 17px;
+    padding: 9px 25px;
+    background-color: #e7305b;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.btn:hover {
+    background-color: #0a97b0;
+}
+
+main {
+    height: auto;
+    background-color: cadetblue;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+
+#canvas {
+    width: 60%;
+    height: 60%;
+    margin: 100px 70px;
+}
+
+.right {
+    background-color: cadetblue;
+    float: right;
+    width: 50%;
+}
+
+@media only screen and (max-width: 760px) {
+    body {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    .left {
+        display: block;
+        width: 100%;
+    }
+    #canvas {
+        width: 70%;
+        height: 80%;
+    }
+    .right {
+        display: block;
+        width: 100%;
+    }
+}
