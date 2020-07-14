@@ -6,6 +6,7 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
+    height: auto;
 }
 
 header {
@@ -31,10 +32,14 @@ nav button {
     align-items: center;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 .btn {
     margin: 17px;
     padding: 9px 25px;
-    background-color: #e7305b;
+    background-color: #0984e3;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -50,29 +55,106 @@ nav button {
 }
 
 .btn:hover {
-    background-color: #0a97b0;
+    background-color: #b33939;
 }
 
 main {
-    height: auto;
     background-color: cadetblue;
 }
 
 .left {
+    background-color: white;
     float: left;
     width: 50%;
+    margin: 2% 0%;
 }
 
 #canvas {
-    width: 60%;
-    height: 60%;
-    margin: 100px 70px;
+    width: 75%;
+    height: 75%;
+    margin-left: 70px;
+    text-align: center;
 }
 
 .right {
-    background-color: cadetblue;
+    /* background-color: #3d3d3d; */
     float: right;
-    width: 50%;
+    width: 45%;
+    height: 75%;
+    margin: 2% 0%;
+}
+
+form {
+    text-align: center;
+}
+
+#form {
+    width: 100%;
+    height: 75%;
+    margin-top: 70px;
+}
+
+#textbox {
+    padding: 9px 25px;
+    background-color: white;
+    border: #0984e3 2px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    width: 47%;
+    height: 12%;
+}
+
+#pwdbox {
+    padding: 9px 25px;
+    background-color: white;
+    border: #0984e3 2px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 16px;
+    color: gray;
+    text-decoration: none;
+    width: 47%;
+    height: 12%;
+}
+
+#lgbtn {
+    width: 20%;
+    height: 10%;
+}
+
+#form h3 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #d63031;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+    background-color: #2d3436;
+    margin-bottom: 0px;
+}
+
+footer p {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 @media only screen and (max-width: 760px) {
@@ -85,13 +167,53 @@ main {
     .left {
         display: block;
         width: 100%;
+        margin-top: 40px;
     }
     #canvas {
-        width: 70%;
-        height: 80%;
+        display: block;
+        width: 100%;
+        height: 50%;
     }
     .right {
         display: block;
+        width: 100%;
+    }
+    #form {
+        width: 100%;
+    }
+    #textbox {
+        width: 65%;
+    }
+    #pwdbox {
+        width: 65%;
+    }
+    #lgbtn {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header {
+        width: 100%;
+    }
+    .left {
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+    }
+    #canvas {
+        display: block;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+    }
+    .right {
+        display: block;
+        margin: 0 auto;
         width: 100%;
     }
 }
