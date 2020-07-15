@@ -1,0 +1,98 @@
+body {
+    overflow-y: hidden;
+}
+
+.content h1 {
+    text-align: center;
+    color: white;
+}
+
+.flex {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#input {
+    margin-left: 15px;
+    margin-right: 50px;
+    width: 30%;
+    height: 10%;
+    padding: 7px 15px;
+    border-radius: 40px;
+    color: black;
+    background-color: white;
+    border: white 2px solid;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+#submit {
+    text-align: center;
+    margin: 25px 60px;
+    width: 10%;
+    height: 10%;
+    background-color: tomato;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 40px;
+    border: tomato 2px solid;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+table {
+    width: 120%;
+    background-color: violet;
+    height: auto;
+    font-size: 12px;
+    color: #333333;
+    width: 40vw;
+    border-width: 1px;
+    border-color: #9dcc7a;
+    border-collapse: collapse;
+    margin-top: 70px;
+    margin-left: 270px;
+}
+
+.tftable th {
+    font-size: 20px;
+    background-color: #abd28e;
+    border-width: 1px;
+    padding: 4px;
+    border-style: solid;
+    border-color: #9dcc7a;
+    text-align: center;
+}
+
+.tftable tr {
+    background-color: #ffffff;
+}
+
+.tftable td {
+    font-size: 18px;
+    border-width: 1px;
+    padding: 4px;
+    border-style: solid;
+    border-color: #9dcc7a;
+    text-align: center;
+}
+
+.tftable tr:hover {
+    background-color: #ffff99;
+}
+
+.success {
+    font-family: 'Muli', sans-serif;
+    background-color: lightgreen;
+    padding: 1em;
+}
+
+.error {
+    font-family: 'Muli', sans-serif;
+    background-color: tomato;
+    padding: 1em;
+}
