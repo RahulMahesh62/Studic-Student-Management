@@ -13,14 +13,9 @@ if(isset($_POST['update'])){
     UpdateData();
 }
 
-// if(isset($_POST['delete'])){
-//     deleteRecord();
-// }
-
-// if(isset($_POST['deleteall'])){
-//     deleteAll();
-
-// }
+if(isset($_POST['delete'])){
+    deleteRecord();
+}
 
 function createData(){
     $sid = textboxValue("id");
@@ -69,26 +64,36 @@ function getData() {
     }
 }
 
+//Update the values
 function UpdateData(){
     $id = textboxValue("id");
     $sname = textboxValue("name");
     $semester = textboxValue("semester");
     $department = textboxValue("dept");
 
-    if($id && $name && $semester && $department){
+    if($id && $sname && $semester && $department){
         $sql = "
-                    UPDATE dashb SET sname='$sname', semester = '$semester', department = '$department' WHERE id='$id';                    
-        ";
-
+                    UPDATE dashb SET sname='$sname', semester = '$semester', department = '$department' WHERE id='$id';";
         if(mysqli_query($GLOBALS['con'], $sql)){
             TextNode("success", "Data Successfully Updated");
         }else{
             TextNode("error", "Enable to Update Data");
         }
-
     }else{
         TextNode("error", "Select Data Using Edit Icon");
     }
+}
 
+//Delete record
+function deleteRecord(){
+    $sid = (int)textboxValue("id");
+
+    $sql = "DELETE FROM dashb WHERE id=$sid;";
+
+    if(mysqli_query($GLOBALS['con'], $sql)){
+        TextNode("success","Record Deleted Successfully...!");
+    }else{
+        TextNode("error","Unable to Delete Record...!");
+    }
 
 }
