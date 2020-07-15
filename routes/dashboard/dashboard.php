@@ -50,7 +50,7 @@
                 <li><a class="nav-link" href="../menu.php">Home</a></li>
                 <li><a class="nav-link" href="#">Dashboard</a></li>
                 <li><a class="nav-link" href="../chnpwd/chnpwd.php">Change Password</a></li>
-                <li><a class="nav-link" href="#">Logout</a></li>
+                <li><a class="nav-link" href="../lgout/lgout.php">Logout</a></li>
             </ul>
         </div>
         <div class="content">

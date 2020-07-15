@@ -49,19 +49,8 @@
         </div>
         <div class="content">
             <section class="main-section" id="about">
-                <h1>Department Of Computer Science and Engineering</h1><br/>
-                <p>The mission of the Computer Engineering Department of CE Cherthala is to generate high caliber computer engineers to meet the global demands. The Computer Engineering Department of CEC offers premier professional training with an eye on
-                    the modern development in Computer Science offering a 4-year B.Tech degree course in Computer Science and Engineering. The department owns versatile and powerful computing facilities. The curriculum is harmonically tuned with today's
-                    hardware and software industry.
-                </p><br>
-                <h2>Mission</h2><br>
-                <p>
-                    To evolve into a center of excellence in the field of Computer Science and Engineering producing innovative and quality engineers contributing to the society and nation.
-                </p><br>
-                <h2>Vision</h2><br>
-                <p>
-                    To impart high-quality professional training with emphasis on state of the art Technology in Computer Science and Engineering, inculcating professional and ethical values in the young minds who contribute to the progress of the Nation.
-                </p><br>
+                <h1>Logout Screen</h1><br/>
+                
             </section>
         </div>
     </main>
