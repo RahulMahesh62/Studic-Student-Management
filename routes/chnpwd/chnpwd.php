@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
@@ -31,7 +31,7 @@
 <body>
     <div class="banner">
         <div class="logo">
-            <img src="images/cl.png" alt="College Logo" class="responsive">
+            <img src="../images/cl.png" alt="College Logo" class="responsive">
         </div>
         <div class="heading">
             <p class="fh">Dept. Of Computer Science</p>
@@ -41,24 +41,27 @@
     <main>
         <div id="left_menu">
             <ul class="nav-links">
-                <li><a class="nav-link" href="./menu.html">Home</a></li>
-                <li><a class="nav-link" href="./dashboard.html">Dashboard</a></li>
-                <li><a class="nav-link" href="./chnpwd.html">Change Password</a></li>
-                <li><a class="nav-link" href="#">My Profile</a></li>
+                <li><a class="nav-link" href="../menu.php">Home</a></li>
+                <li><a class="nav-link" href="../dashboard/dashboard.php">Dashboard</a></li>
+                <li><a class="nav-link" href="#">Change Password</a></li>
+                <li><a class="nav-link" href="#">Logout</a></li>
             </ul>
         </div>
         <div class="content">
-            <section class="main-section" id="profile">
-                <h1>My Profile</h1><br/>
-                <img src="images/r7.jpg" alt="RahulMahesh" class="center responsives avatar"><br/>
-                <div class="profcontent">
-                    <p>Class: S6 CSB</p>
-                    <p>Register No:&nbsp;CEC17CS0**</p>
-                    <p>Phone No:&nbsp;+917592032972</p>
-                    <p>Address: &nbsp;Udumbanattu, Pallippuram P.O<br>Cherthala, Alappuzha, PIN:&nbsp;688541</p>
-                    <p>Email:<a target="_blank" href="mailto:rahulmahesh62@gmail.com">&nbsp;&nbsp;rahulmahesh62@gmail.com</a></p>
-                    <p>Website: <a target="_blank" href="http://rahulmahesh.netlify.com">&nbsp;&nbsp;http://rahulmahesh.netlify.com</a></p>
-                </div>
+            <section class="main-section" id="about">
+                <h1>Department Of Computer Science and Engineering</h1><br/>
+                <p>The mission of the Computer Engineering Department of CE Cherthala is to generate high caliber computer engineers to meet the global demands. The Computer Engineering Department of CEC offers premier professional training with an eye on
+                    the modern development in Computer Science offering a 4-year B.Tech degree course in Computer Science and Engineering. The department owns versatile and powerful computing facilities. The curriculum is harmonically tuned with today's
+                    hardware and software industry.
+                </p><br>
+                <h2>Mission</h2><br>
+                <p>
+                    To evolve into a center of excellence in the field of Computer Science and Engineering producing innovative and quality engineers contributing to the society and nation.
+                </p><br>
+                <h2>Vision</h2><br>
+                <p>
+                    To impart high-quality professional training with emphasis on state of the art Technology in Computer Science and Engineering, inculcating professional and ethical values in the young minds who contribute to the progress of the Nation.
+                </p><br>
             </section>
         </div>
     </main>

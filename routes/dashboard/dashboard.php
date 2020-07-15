@@ -37,7 +37,7 @@
 <body>
     <div class="banner">
         <div class="logo">
-            <img src="images/cl.png" alt="College Logo" class="responsive">
+            <img src="../images/cl.png" alt="College Logo" class="responsive">
         </div>
         <div class="heading">
             <p class="fh">Dept. Of Computer Science</p>
@@ -47,10 +47,10 @@
     <main>
         <div id="left_menu">
             <ul class="nav-links">
-                <li><a class="nav-link" href="./menu.html">Home</a></li>
+                <li><a class="nav-link" href="../menu.php">Home</a></li>
                 <li><a class="nav-link" href="#">Dashboard</a></li>
-                <li><a class="nav-link" href="./chnpwd.html">Change Password</a></li>
-                <li><a class="nav-link" href="./profile.html">My Profile</a></li>
+                <li><a class="nav-link" href="../chnpwd/chnpwd.php">Change Password</a></li>
+                <li><a class="nav-link" href="#">Logout</a></li>
             </ul>
         </div>
         <div class="content">

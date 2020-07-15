@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/dashstyle.css">
     <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
@@ -42,17 +41,25 @@
     <main>
         <div id="left_menu">
             <ul class="nav-links">
-                <li><a class="nav-link" href="./menu.html">Home</a></li>
-                <li><a class="nav-link" href="#">Dashboard</a></li>
-                <li><a class="nav-link" href="./chnpwd.html">Change Password</a></li>
-                <li><a class="nav-link" href="./profile.html">My Profile</a></li>
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="./dashboard/dashboard.php">Dashboard</a></li>
+                <li><a class="nav-link" href="./chnpwd/chnpwd.php">Change Password</a></li>
+                <li><a class="nav-link" href="#">Logout</a></li>
             </ul>
         </div>
         <div class="content">
             <section class="main-section" id="profile">
-
-        </div>
-        </section>
+                <h1>My Profile</h1><br/>
+                <img src="images/r7.jpg" alt="RahulMahesh" class="center responsives avatar"><br/>
+                <div class="profcontent">
+                    <p>Class: S6 CSB</p>
+                    <p>Register No:&nbsp;CEC17CS0**</p>
+                    <p>Phone No:&nbsp;+917592032972</p>
+                    <p>Address: &nbsp;Udumbanattu, Pallippuram P.O<br>Cherthala, Alappuzha, PIN:&nbsp;688541</p>
+                    <p>Email:<a target="_blank" href="mailto:rahulmahesh62@gmail.com">&nbsp;&nbsp;rahulmahesh62@gmail.com</a></p>
+                    <p>Website: <a target="_blank" href="http://rahulmahesh.netlify.com">&nbsp;&nbsp;http://rahulmahesh.netlify.com</a></p>
+                </div>
+            </section>
         </div>
     </main>
     <div id="footer">
