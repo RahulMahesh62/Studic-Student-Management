@@ -71,7 +71,7 @@
 
 .btn {
     margin: 17px;
-    padding: 9px 25px;
+    padding: 9px 15px;
     background-color: #b33939;
     border: none;
     border-radius: 50px;
@@ -88,9 +88,13 @@
 }
 
 #lgbtn {
-    margin: 30px 450px;
-    width: 20%;
+    margin: 30px 475px;
+    width: 15%;
     height: 10%;
+}
+
+#error {
+    margin-left: 300px;
 }
     </style>
 </head>
@@ -117,10 +121,11 @@
         <div class="content">
             <section class="main-section" id="about">
                 <h1>Change Password</h1><br/>
-                <form action="" method="post">
+                <div id="error"></div>
+                <form action="" method="post" id="form">
                     <input type="email" name="email" id="textbox" placeholder="Enter Email" required><br /><br />
-                    <input type="password" name="password" id="pwdbox" class="btn" placeholder="Enter current Password" required><br />
-                    <input type="password" name="npassword" id="pwdbox" class="btn" placeholder="Enter new Password" required><br />
+                    <input type="password" name="password" id="pwdbox" class="btn pwd" placeholder="Enter current Password" required><br />
+                    <input type="password" name="npassword" id="pwdbox" class="btn pwd npwd" placeholder="Enter new Password" required><br />
                     <input type="submit" id="lgbtn" class="btn" value="Change Password" name="submit">
                 </form>
             </section>
@@ -129,6 +134,7 @@
     <div id="footer">
         <p class="fcontent1">&nbsp;&nbsp;Developed by : <a target="_blank" href="http://rahulmahesh.netlify.com">Rahul&nbsp;Mahesh</a>&nbsp;&nbsp;&nbsp;Mail ID : <a target="_blank" href="mailto:rahulmahesh62@gmail.com">rahulmahesh62@gmail.com</a></p>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

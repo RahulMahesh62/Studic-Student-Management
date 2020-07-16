@@ -38,7 +38,7 @@ nav a {
 
 .btn {
     margin: 17px;
-    padding: 9px 25px;
+    padding: 10px 25px;
     background-color: #0984e3;
     border: none;
     border-radius: 50px;
@@ -60,6 +60,10 @@ nav a {
 
 main {
     background-color: cadetblue;
+}
+
+#error {
+    margin-left: 150px;
 }
 
 .left {
@@ -130,7 +134,7 @@ form {
 
 #lgbtn {
     width: 20%;
-    height: 10%;
+    height: 13%;
 }
 
 #form h3 {

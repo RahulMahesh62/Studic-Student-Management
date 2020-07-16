@@ -47,9 +47,10 @@
         <div class="right">
             <div id="form">
                 <h3>LOGIN</h3>
-                <form action="" method="post">
-                    <input type="text" name="email" id="textbox" placeholder="Email" required><br /><br />
-                    <input type="password" name="password" id="pwdbox" class="btn" placeholder="Password" required><br />
+                <div id="error"></div>
+                <form action="" method="post" id="form">
+                    <input type="text" name="email" id="textbox" placeholder="Email" class="email" required><br /><br />
+                    <input type="password" name="password" id="pwdbox" class="btn pwd" placeholder="Password" required><br />
                     <input type="submit" id="lgbtn" class="btn" value="Login" name="submit">
                 </form>
             </div>
@@ -58,6 +59,7 @@
     <footer>
         <p>© 2020 Rahul Mahesh </p>
     </footer>
+    <script src="./register/script.js"></script>
 </body>
 
 </html>

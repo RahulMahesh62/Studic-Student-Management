@@ -59,7 +59,7 @@ main {
     font-family: 'Poppins', sans-serif;
     background-color: #218c74;
     width: 250px;
-    height: 79.6vh;
+    height: auto;
     border-right: 4px solid #10ac84;
 }
 
@@ -83,7 +83,7 @@ main {
 .content {
     background-color: #2d3436;
     flex: 1;
-    height: 97vh;
+    height: auto;
     overflow-y: scroll;
     color: white;
     padding: 60px;
