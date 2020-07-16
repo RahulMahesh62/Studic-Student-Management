@@ -22,7 +22,7 @@
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Sign In</title>
 </head>
 
@@ -33,12 +33,12 @@
         </div>
         <nav>
             <a href="#"><button id="sign-in" class="btn">Sign In</button>
-                <a href="./routes/register.html"><button id="signup" class="btn">Register</button></a>
+                <a href="./register/register.php"><button id="signup" class="btn">Register</button></a>
         </nav>
     </header>
     <main>
         <div class="left">
-            <img id="canvas" src="./images/sin.png" alt="">
+            <img id="canvas" src="../images/sin.png" alt="">
         </div>
         <div class="right">
             <div id="form">

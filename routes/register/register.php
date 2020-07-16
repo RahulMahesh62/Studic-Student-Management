@@ -22,7 +22,7 @@
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Register Here</title>
 </head>
 
@@ -32,13 +32,13 @@
             <img id="clglogo" src="../images/college_logo (1).png" alt="">
         </div>
         <nav>
-            <a href="../index.html"><button id="sign-in" class="btn">Sign In</button>
+            <a href="../index.php"><button id="sign-in" class="btn">Sign In</button>
                 <a href="#"><button id="signup" class="btn">Register</button></a>
         </nav>
     </header>
     <main>
         <div class="left">
-            <img id="canvas" src="../images/reg.png" alt="">
+            <img id="canvas" src="./reg.png" alt="">
         </div>
         <div class="right">
             <div id="form">
