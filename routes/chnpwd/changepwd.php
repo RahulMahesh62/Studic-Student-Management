@@ -6,23 +6,26 @@ $con = Createdb();
 
 // create button click
 if(isset($_POST['submit'])){
-    createData();
+    changePassword();
 }
 
-function createData(){
-    $uname = textboxValue("username");
+function changePassword(){
     $email = textboxValue("email");
     $pwd = textboxValue("password");
+    $npwd = textboxValue("npassword");
 
-    if($uname && $email && $pwd){
+    if($email && $pwd&& $npwd){
 
-        $sql = "INSERT INTO login (username, email, pwd) 
-                        VALUES ('$uname','$email','$pwd')";
+        $sql = "select email,pwd from login where email = '$email' and pwd = '$pwd'";
+        $query = mysqli_query($GLOBALS['con'], $sql);
+        $num = mysqli_fetch_array($query);
 
-        if(mysqli_query($GLOBALS['con'], $sql)){
-            TextNode("success", "Record Successfully Inserted...!");
-        }else{
-            echo "Error";
+        if($num > 0) {
+
+            $con = mysqli_query($GLOBALS['con'], "update login set pwd = '$npwd' where email = '$email'");
+            $_SESSION['msg1'] = "Password change successful";
+        } else {
+            $_SESSION['msg1'] = "Password change unsuccessful";
         }
 
     }else{
@@ -45,3 +48,4 @@ function TextNode($classname,$msg) {
     $element = "<h6 class='$classname'>$msg</h6>";
     echo $element;
 }
+

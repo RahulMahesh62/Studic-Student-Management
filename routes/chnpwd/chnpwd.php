@@ -1,3 +1,8 @@
+<?php 
+    session_start();
+    require_once("./changepwd.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +31,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Muli&display=swap" rel="stylesheet">
     <title>COMPUTER SCIENCE DEPARTMENT</title>
+    <style>
+#textbox {
+    padding: 9px 25px;
+    margin-top: 50px;
+    margin: 45px 385px 20px  385px;
+    background-color: white;
+    border: #0984e3 2px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    width: 30%;
+    height: 12%;
+    outline: none;
+    box-shadow: none;
+}
+
+#pwdbox {
+    padding: 9px 25px;
+    margin: 10px 385px;
+    background-color: white;
+    border: #0984e3 2px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 16px;
+    color: gray;
+    text-decoration: none;
+    width: 30%;
+    height: 12%;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn {
+    margin: 17px;
+    padding: 9px 25px;
+    background-color: #b33939;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+#lgbtn {
+    margin: 30px 450px;
+    width: 20%;
+    height: 10%;
+}
+    </style>
 </head>
 
 <body>
@@ -49,19 +116,13 @@
         </div>
         <div class="content">
             <section class="main-section" id="about">
-                <h1>Department Of Computer Science and Engineering</h1><br/>
-                <p>The mission of the Computer Engineering Department of CE Cherthala is to generate high caliber computer engineers to meet the global demands. The Computer Engineering Department of CEC offers premier professional training with an eye on
-                    the modern development in Computer Science offering a 4-year B.Tech degree course in Computer Science and Engineering. The department owns versatile and powerful computing facilities. The curriculum is harmonically tuned with today's
-                    hardware and software industry.
-                </p><br>
-                <h2>Mission</h2><br>
-                <p>
-                    To evolve into a center of excellence in the field of Computer Science and Engineering producing innovative and quality engineers contributing to the society and nation.
-                </p><br>
-                <h2>Vision</h2><br>
-                <p>
-                    To impart high-quality professional training with emphasis on state of the art Technology in Computer Science and Engineering, inculcating professional and ethical values in the young minds who contribute to the progress of the Nation.
-                </p><br>
+                <h1>Change Password</h1><br/>
+                <form action="" method="post">
+                    <input type="email" name="email" id="textbox" placeholder="Enter Email" required><br /><br />
+                    <input type="password" name="password" id="pwdbox" class="btn" placeholder="Enter current Password" required><br />
+                    <input type="password" name="npassword" id="pwdbox" class="btn" placeholder="Enter new Password" required><br />
+                    <input type="submit" id="lgbtn" class="btn" value="Change Password" name="submit">
+                </form>
             </section>
         </div>
     </main>

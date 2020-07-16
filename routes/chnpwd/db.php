@@ -19,7 +19,7 @@ function Createdb() {
 
     if(mysqli_query($con,$sql)) {
         $con = mysqli_connect($servername, $username, $password, $dbname);
-        $sql = "CREATE TABLE IF NOT EXISTS dashb(id INT(10) NOT NULL PRIMARY KEY, sname VARCHAR(25) NOT NULL, semester VARCHAR(25), department VARCHAR(25))";
+        $sql = "CREATE TABLE IF NOT EXISTS login(username VARCHAR(25), email VARCHAR(25), pwd VARCHAR(25))";
 
         if(mysqli_query($con,$sql)) {
             return $con;
