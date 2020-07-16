@@ -56,14 +56,15 @@
         <div class="content">
             <h1>Dashboard</h1>
             <div class="flex">
-                <form action="" method="post">
-                    <input type="text" name="id" placeholder="Enter ID" id="input"><br><br>
-                    <input type="text" name="name" placeholder="Enter Name" id="input"><br><br>
-                    <input type="text" name="semester" placeholder="Enter Semester" id="input"><br><br>
-                    <input type="text" name="dept" placeholder="Enter Department" id="input"><br><br>
-                    <button value="Add" id="submit" name="add">Add</button>
+            <div id="error"></div>
+                <form action="" method="post" id="form">
+                    <input type="text" name="id" class="id" placeholder="Enter ID" id="input"><br><br>
+                    <input type="text" name="name" placeholder="Enter Name" class="name" id="input"><br><br>
+                    <input type="text" name="semester" placeholder="Enter Semester" id="input" class="semester"><br><br>
+                    <input type="text" name="dept" placeholder="Enter Department" id="input" class="dept"><br><br>
+                    <button value="Add" id="submit" name="add" class="button">Add</button>
                     <button value="View" id="submit" name="view">View</button>
-                    <button value="Update" id="submit" name="update">Update</button>
+                    <button value="Update" id="submit" name="update" class="button">Update</button>
                     <button value="Delete" id="submit" name="delete">Delete</button>
                 </form>
             </div>
@@ -117,6 +118,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="main.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

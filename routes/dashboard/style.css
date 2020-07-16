@@ -122,6 +122,10 @@ main {
     width: 50%;
 }
 
+#error {
+    margin: 50px 100px 40px 100px;
+}
+
 .avatar {
     vertical-align: middle;
     width: 170px;
