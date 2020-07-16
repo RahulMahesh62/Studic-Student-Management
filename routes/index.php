@@ -1,3 +1,7 @@
+<?php 
+    require_once("./login.php");
+?>
+
 <html lang="en">
 
 <head>
@@ -44,9 +48,9 @@
             <div id="form">
                 <h3>LOGIN</h3>
                 <form action="" method="post">
-                    <input type="text" name="username" id="textbox" placeholder="Username"><br /><br />
-                    <input type="password" name="Password" id="pwdbox" class="btn" placeholder="Password"><br />
-                    <input type="submit" id="lgbtn" class="btn" value="Login">
+                    <input type="text" name="email" id="textbox" placeholder="Email" required><br /><br />
+                    <input type="password" name="password" id="pwdbox" class="btn" placeholder="Password" required><br />
+                    <input type="submit" id="lgbtn" class="btn" value="Login" name="submit">
                 </form>
             </div>
         </div>

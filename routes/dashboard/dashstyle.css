@@ -21,6 +21,8 @@ body {
     border-radius: 40px;
     color: black;
     background-color: white;
+    outline: none;
+    box-shadow: none;
     border: white 2px solid;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
@@ -88,11 +90,11 @@ table {
 .success {
     font-family: 'Muli', sans-serif;
     background-color: lightgreen;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 .error {
     font-family: 'Muli', sans-serif;
     background-color: tomato;
-    padding: 1em;
+    padding: 1.5em;
 }

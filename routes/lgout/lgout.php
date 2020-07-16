@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../lgout.css">
     <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
@@ -26,6 +27,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Muli&display=swap" rel="stylesheet">
     <title>COMPUTER SCIENCE DEPARTMENT</title>
+    <style>
+        .btng {
+            margin: 100px 500px;
+            text-align: center;
+            padding: 9px 25px;
+            background-color: #0984e3;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            font-weight: 500;
+            font-size: 16px;
+            color: #edf0f1;
+            text-decoration: none;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,14 +64,15 @@
             <ul class="nav-links">
                 <li><a class="nav-link" href="../menu.php">Home</a></li>
                 <li><a class="nav-link" href="../dashboard/dashboard.php">Dashboard</a></li>
-                <li><a class="nav-link" href="#">Change Password</a></li>
-                <li><a class="nav-link" href="../lgout/lgout.php">Logout</a></li>
+                <li><a class="nav-link" href="../chnpwd/chnpwd.php">Change Password</a></li>
+                <li><a class="nav-link" href="#">Logout</a></li>
             </ul>
         </div>
         <div class="content">
             <section class="main-section" id="about">
                 <h1>Logout Screen</h1><br/>
-                
+                <h3 align="center">Are you sure you want to log out ???</h3>
+                <a href="./logout.php"><button class="btng">Logout</button></a>
             </section>
         </div>
     </main>

@@ -107,6 +107,8 @@ form {
     text-decoration: none;
     width: 47%;
     height: 12%;
+    outline: none;
+    box-shadow: none;
 }
 
 #pwdbox {
@@ -122,6 +124,8 @@ form {
     text-decoration: none;
     width: 47%;
     height: 12%;
+    outline: none;
+    box-shadow: none;
 }
 
 #lgbtn {
@@ -155,6 +159,18 @@ footer p {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+}
+
+.success {
+    font-family: 'Muli', sans-serif;
+    background-color: lightgreen;
+    padding: 1.5em;
+}
+
+.error {
+    font-family: 'Muli', sans-serif;
+    background-color: tomato;
+    padding: 1.5em;
 }
 
 @media only screen and (max-width: 760px) {
