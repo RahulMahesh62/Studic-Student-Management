@@ -35,6 +35,7 @@ function createData(){
         }
 
     }else{
+             //Check if input fields empty
             TextNode("error", "Provide Data in the Textbox");
     }
 }

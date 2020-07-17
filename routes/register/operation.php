@@ -4,11 +4,12 @@ require_once ("./db.php");
 
 $con = Createdb();
 
-// create button click
+// createData function call upton Submit button click
 if(isset($_POST['submit'])){
     createData();
 }
 
+//function to Register users
 function createData(){
     $uname = textboxValue("username");
     $email = textboxValue("email");
@@ -26,6 +27,7 @@ function createData(){
         }
 
     }else{
+            //Check if input fields empty
             TextNode("error", "Provide Data in the Textbox");
     }
 }

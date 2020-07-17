@@ -4,11 +4,12 @@ require_once ("./db.php");
 
 $con = Createdb();
 
-// create button click
+//Call changePassword function upon Submit button click
 if(isset($_POST['submit'])){
     changePassword();
 }
 
+//Function to change password
 function changePassword(){
     $email = textboxValue("email");
     $pwd = textboxValue("password");

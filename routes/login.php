@@ -19,14 +19,17 @@ function loginUser() {
         $num = mysqli_num_rows($result); 
 
         if($num == 1) {
+            //Login Successful
             header('location:menu.php');
             TextNode("success", "Login Successful");
         } else {
-            header('location:menu.php');
+            //Login Unsuccessful
+            header('location:./register/register.php');
             TextNode("error", "Login Unsuccessful. Try again");
         }
 
     }else{
+            //Check if input fields empty
             TextNode("error", "Provide Data in the Textbox");
     }
 }

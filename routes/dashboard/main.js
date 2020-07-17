@@ -1,5 +1,3 @@
-// let id = $("input[name*='id']")
-// id.attr("readonly", "readonly");
 $(".btnedit").click(e => {
     let textvalues = displayData(e);
     let id = $("input[name*='id']");
